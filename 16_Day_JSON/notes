@@ -1,0 +1,144 @@
+JSON
+JSON  stands for JavaScript Object Notation.The JSON syntax is dervied from JavaScript
+Object notation syntax, but the JSON format is text or string only 
+JSON is a light weight data format for storing and transporting.
+JSON is mostly used when data is sent from a server to a client 
+JSON is an easier to use alternative to XML
+
+
+
+{
+"users":[
+  {
+    "firstName":"Asabeneh",
+    "lastName":"Yetayeh",
+    "age":250,
+    "email":"asab@asb.com"
+  },
+  {
+    "firstName":"Alex",
+    "lastName":"James",
+    "age":25,
+    "email":"alex@alex.com"
+  },
+  {
+  "firstName":"Lidiya",
+  "lastName":"Tekle",
+  "age":28,
+  "email":"lidiya@lidiya.com"
+  }
+]
+}
+the above JSON example is not much different from a natural object.Then the differnence is the key of 
+a JavaScript object should be with double quotes or it should be a string.
+JavaScript Object and JSON are very similar that we can change JSON to object and 
+object to JSON
+
+Let us see the above example in more detail,
+It starts with a curly bracket.Inside the curly bracket, there is "users" key which has a value array
+Inside the arry we have different objects and each object has keys,each key has to have double quotes 
+for example we use "firstName" instead of firstName, however in object we use keys without the double quotes 
+This is the major difference between  an object and JSON 
+
+Let us see more examples of JSON
+{
+    "Alex":{"email":"alex@alex.com",
+    "skills":["HTML","CSS","JavaScript"],
+    "age":20,
+    "isLoggedIn": false,
+    "points":30
+    },
+    "Asab": {
+        "email": "asab@asab.com",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Redux",
+            "MongoDB",
+            "Express",
+            "React",
+            "Node"
+        ],
+        "age": 25,
+        "isLoggedIn": false,
+        "points": 50
+    },
+    "Brook": {
+        "email": "daniel@daniel.com",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Redux"
+        ],
+        "age": 30,
+        "isLoggedIn": true,
+        "points": 50
+    },
+    "Daniel": {
+        "email": "daniel@alex.com",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+        ],
+        "age": 20,
+        "isLoggedIn": false,
+        "points": 40
+    },
+    "John": {
+        "email": "john@john.com",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Redux",
+            "Node.js"
+        ],
+        "age": 20,
+        "isLoggedIn": true,
+        "points": 50
+    },
+    "Thomas": {
+        "email": "thomas@thomas.com",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React"
+        ],
+        "age": 20,
+        "isLoggedIn": false,
+        "points": 40
+    },
+    "Paul": {
+        "email": "paul@paul.com",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "MongoDB",
+            "Express",
+            "React",
+            "Node"
+        ],
+        "age": 20,
+        "isLoggedIn": false,
+        "points": 40
+    }
+}
+
+
+Converting JSON to JavaScript Object
+
+
+Mostly we fetch JSON from HTTP response or from a file,but we can store the JSON as string
+and we can change to Object for sake of demonstrartion. In JavaScript the keyword JSON
+has parse() and stringify() methods.
+
+When we want to change the JSON to an object we parse the JSON using JSON.parse()
+When we want to change the object to an JSON we use JSON.stringify()
